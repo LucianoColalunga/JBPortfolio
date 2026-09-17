@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lic. Javier Becco | Seguridad, Higiene y Control Ambiental Laboral</title>
+<meta name="description" content="Lic. Javier Ezequiel Becco, Licenciado en Seguridad, Higiene y Control Ambiental Laboral matriculado en el CPIT de Viedma. Asesoramiento, capacitación e inspección técnica para empresas de Río Negro y la Patagonia."/>
+<meta property="og:title" content="Lic. Javier Becco | Seguridad, Higiene y Control Ambiental Laboral"/>
+<meta property="og:description" content="Asesoramiento, capacitación e inspección técnica en Seguridad e Higiene Laboral. Matriculado en el CPIT de Viedma."/>
+<meta property="og:type" content="profile"/>
+<meta property="og:image" content="assets/img/javier-becco.jpeg"/>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/styles.css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tailwind.config.js"></script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+
+<header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between gap-space-md">
+    <a href="#inicio" class="flex items-center gap-space-sm">
+      <img src="assets/img/favicon.svg" alt="" class="h-8 w-8" width="32" height="32"/>
+      <div class="flex flex-col leading-tight">
+        <span class="font-title-md text-title-md text-primary tracking-tight">Lic. Javier Becco</span>
+        <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Seguridad, Higiene y Control Ambiental</span>
+      </div>
+    </a>
+
+    <nav class="hidden xl:flex items-center gap-space-sm" aria-label="Navegación principal">
+      <a class="nav-link px-space-sm py-space-xs transition-colors hover:bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" data-path="inicio" href="#inicio">Inicio</a>
+      <a class="nav-link px-space-sm py-space-xs transition-colors hover:bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" data-path="sobre-mi" href="#sobre-mi">Sobre mí</a>
+      <a class="nav-link px-space-sm py-space-xs transition-colors hover:bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" data-path="trayectoria" href="#trayectoria">Trayectoria</a>
+      <a class="nav-link px-space-sm py-space-xs transition-colors hover:bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" data-path="servicios" href="#servicios">Servicios</a>
+      <a class="nav-link px-space-sm py-space-xs transition-colors hover:bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" data-path="contacto" href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="flex items-center gap-space-sm">
+      <a class="hidden md:inline-flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-lowest text-primary hover:bg-surface-container-high hover:text-on-surface transition-all shadow-[0_1px_3px_rgba(15,41,66,0.05)]" href="assets/cv/CV_Javier_Becco.pdf" download="CV_Javier_Becco.pdf">
+        <span class="material-symbols-outlined text-[18px]">download</span>
+        <span class="font-body-sm text-body-sm font-semibold">Descargar CV</span>
+      </a>
+      <a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded bg-secondary text-on-secondary hover:bg-primary-container hover:text-on-primary transition-all shadow-[0_1px_3px_rgba(15,41,66,0.05)]" href="https://wa.me/5492920523324?text=Hola%20Lic.%20Javier%20Becco%2C%20quisiera%20hacerle%20una%20consulta%20t%C3%A9cnica%20sobre%20Seguridad%20e%20Higiene." rel="noopener noreferrer" target="_blank">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span class="font-body-sm text-body-sm font-semibold hidden sm:inline">WhatsApp</span>
+      </a>
+      <button id="nav-toggle" type="button" class="xl:hidden inline-flex items-center justify-center w-10 h-10 rounded bg-surface-container-lowest text-primary" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú de navegación">
+        <span class="material-symbols-outlined text-[22px]">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-nav" class="hidden flex-col gap-1 px-gutter-mobile py-space-md bg-surface-container-lowest border-t border-outline-variant/40 xl:hidden" aria-label="Navegación móvil">
+    <a class="nav-link px-space-sm py-space-sm rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low" data-path="inicio" href="#inicio">Inicio</a>
+    <a class="nav-link px-space-sm py-space-sm rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low" data-path="sobre-mi" href="#sobre-mi">Sobre mí</a>
+    <a class="nav-link px-space-sm py-space-sm rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low" data-path="trayectoria" href="#trayectoria">Trayectoria</a>
+    <a class="nav-link px-space-sm py-space-sm rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low" data-path="formacion" href="#formacion">Formación</a>
+    <a class="nav-link px-space-sm py-space-sm rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low" data-path="servicios" href="#servicios">Servicios</a>
+    <a class="nav-link px-space-sm py-space-sm rounded font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low" data-path="contacto" href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]">
+<div class="flex flex-col w-full">
+
+<!-- HERO -->
+<section class="relative w-full overflow-hidden bg-surface-container-low py-space-xl md:py-margin" id="inicio">
+  <div class="max-w-[1200px] mx-auto px-gutter relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+      <div class="lg:col-span-7 flex flex-col items-start">
+        <div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-highest text-primary mb-space-md shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Matrícula Profesional Activa</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-mono">| CPIT Viedma</span>
+        </div>
+
+        <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary font-extrabold tracking-tight mb-space-md">
+          Lic. Javier Becco
+          <span class="text-secondary block font-semibold text-headline-lg-mobile md:text-headline-lg mt-1">Consultoría en Seguridad, Higiene y Control Ambiental Laboral</span>
+        </h1>
+
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-lg">
+          Asesoramiento independiente, capacitación de personal e inspección técnica en prevención de riesgos laborales, con orientación a organizaciones industriales, petroleras y de gas en Río Negro y la Patagonia.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-space-md w-full sm:w-auto mb-space-xl">
+          <a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-secondary text-on-secondary rounded font-body-md text-body-md font-semibold hover:bg-primary transition-all duration-200 shadow-md hover:shadow-lg w-full sm:w-auto" href="https://wa.me/5492920523324?text=Hola%20Lic.%20Javier%20Becco%2C%20quisiera%20hacerle%20una%20consulta%20t%C3%A9cnica%20sobre%20Seguridad%20e%20Higiene." rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[20px]">chat</span>
+            <span>Contactar por WhatsApp</span>
+            <span class="font-label-sm text-label-sm opacity-80">(+54 2920 52-3324)</span>
+          </a>
+          <a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm bg-surface-container-lowest text-primary rounded font-body-md text-body-md font-semibold hover:bg-surface-container-high transition-all duration-200 shadow-sm hover:shadow-md w-full sm:w-auto" href="assets/cv/CV_Javier_Becco.pdf" download="CV_Javier_Becco.pdf">
+            <span class="material-symbols-outlined text-[20px]">description</span>
+            <span>Descargar CV Profesional</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant px-space-xs bg-surface-container rounded">[PDF · 136 KB]</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm w-full pt-space-md">
+          <div class="p-space-sm bg-surface-container-lowest rounded shadow-sm flex flex-col">
+            <span class="font-headline-sm text-headline-sm text-primary font-bold">+12 años</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">En Seguridad e Higiene</span>
+          </div>
+          <div class="p-space-sm bg-surface-container-lowest rounded shadow-sm flex flex-col">
+            <span class="font-headline-sm text-headline-sm text-secondary font-bold">7 años</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">De docencia técnica</span>
+          </div>
+          <div class="p-space-sm bg-surface-container-lowest rounded shadow-sm flex flex-col">
+            <span class="font-headline-sm text-headline-sm text-primary font-bold">3 normas</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">ISO 9001 · 14001 · 45001</span>
+          </div>
+          <div class="p-space-sm bg-surface-container-lowest rounded shadow-sm flex flex-col">
+            <span class="font-headline-sm text-headline-sm text-secondary font-bold">CPIT</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">Matriculado en Viedma</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+        <div class="relative w-full max-w-[440px]">
+          <div class="absolute -top-4 -left-4 w-full h-full bg-surface-variant rounded-lg transform -rotate-1" aria-hidden="true"></div>
+          <div class="relative bg-surface-container-lowest rounded-lg overflow-hidden shadow-xl p-space-md">
+            <img class="w-full h-[460px] object-cover object-top rounded" alt="Lic. Javier Becco, Licenciado en Seguridad, Higiene y Control Ambiental Laboral" src="assets/img/javier-becco.jpeg" width="440" height="460"/>
+            <div class="mt-space-md p-space-sm bg-surface-container rounded flex items-center justify-between gap-space-sm">
+              <div class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-secondary text-[22px]">verified_user</span>
+                <div class="flex flex-col">
+                  <span class="font-title-md text-title-md text-primary font-bold">Lic. Javier Becco</span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant">Seguridad, Higiene y Control Ambiental</span>
+                </div>
+              </div>
+              <span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs py-1 rounded font-mono font-medium whitespace-nowrap">DISPONIBLE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section class="w-full py-space-xl bg-surface" id="sobre-mi">
+  <div class="max-w-[1200px] mx-auto px-gutter">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+      <div class="lg:col-span-6 flex flex-col">
+        <div class="inline-flex items-center gap-space-xs mb-space-sm">
+          <span class="material-symbols-outlined text-secondary text-[18px]">engineering</span>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Perfil Profesional</span>
+        </div>
+        <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-space-md">
+          Prevención de riesgos, docencia y cumplimiento normativo
+        </h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+          Soy el <strong>Licenciado Javier Ezequiel Becco</strong>, Licenciado en Seguridad, Higiene y Control Ambiental Laboral, matriculado en el Colegio Profesional de Ingenieros y Técnicos (CPIT) de Viedma. Tengo experiencia en inspección técnica, prevención de riesgos laborales, capacitación de personal y docencia en seguridad e higiene.
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+          Mi trayectoria previa como técnico electricista y supervisor de planta en industria pesada me da una mirada práctica del trabajo en planta, que complemento con el manejo de las normas <strong>ISO 9001, ISO 14001 e ISO 45001</strong>, orientado a organizaciones industriales, petroleras y de gas.
+        </p>
+
+        <div class="flex flex-wrap gap-space-xs items-center p-space-md bg-surface-container rounded">
+          <span class="font-label-sm text-label-sm text-on-surface font-semibold mr-space-xs">Marco Normativo:</span>
+          <span class="font-label-sm text-label-sm px-space-xs py-1 rounded bg-surface-container-lowest text-primary shadow-sm font-mono">Ley 19.587</span>
+          <span class="font-label-sm text-label-sm px-space-xs py-1 rounded bg-surface-container-lowest text-primary shadow-sm font-mono">ISO 9001</span>
+          <span class="font-label-sm text-label-sm px-space-xs py-1 rounded bg-surface-container-lowest text-primary shadow-sm font-mono">ISO 14001</span>
+          <span class="font-label-sm text-label-sm px-space-xs py-1 rounded bg-surface-container-lowest text-secondary shadow-sm font-mono font-bold">ISO 45001</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+        <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+            <span class="material-symbols-outlined text-[24px]">verified</span>
+          </div>
+          <h3 class="font-title-md text-title-md text-primary font-bold mb-space-xs">Prevención de Riesgos</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Asesoramiento y capacitación en prevención de riesgos laborales, seguridad, higiene y control ambiental para personal operativo.
+          </p>
+        </div>
+        <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 rounded bg-secondary-container flex items-center justify-center text-secondary mb-space-sm">
+            <span class="material-symbols-outlined text-[24px]">school</span>
+          </div>
+          <h3 class="font-title-md text-title-md text-primary font-bold mb-space-xs">Docencia y Capacitación</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Trayectoria docente en el CET N° 6, el IPAP y la Escuela de Aprendizaje y Oficios N° 1 de Viedma.
+          </p>
+        </div>
+        <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+            <span class="material-symbols-outlined text-[24px]">fact_check</span>
+          </div>
+          <h3 class="font-title-md text-title-md text-primary font-bold mb-space-xs">Inspección Técnica</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Inspección técnica de condiciones de seguridad e higiene, con experiencia en el Consejo Escolar Valle Inferior.
+          </p>
+        </div>
+        <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-10 h-10 rounded bg-secondary-container flex items-center justify-center text-secondary mb-space-sm">
+            <span class="material-symbols-outlined text-[24px]">eco</span>
+          </div>
+          <h3 class="font-title-md text-title-md text-primary font-bold mb-space-xs">Gestión Ambiental ISO</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Manejo de normas ISO 9001, ISO 14001 e ISO 45001 orientado a industria, petróleo y gas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAYECTORIA -->
+<section class="w-full py-space-xl bg-surface-container-low" id="trayectoria">
+  <div class="max-w-[900px] mx-auto px-gutter">
+    <div class="max-w-2xl mb-space-xl">
+      <div class="inline-flex items-center gap-space-xs mb-space-xs">
+        <span class="material-symbols-outlined text-secondary text-[18px]">timeline</span>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Experiencia Laboral</span>
+      </div>
+      <h2 class="font-headline-lg text-headline-lg text-primary font-bold">Trayectoria Profesional</h2>
+    </div>
+
+    <div class="timeline flex flex-col gap-space-xl">
+      <div class="timeline-item is-current">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <div class="flex flex-wrap items-baseline justify-between gap-space-xs mb-space-xs">
+          <h3 class="font-title-md text-title-md text-primary font-bold">Licenciado en Seguridad, Higiene y Control Ambiental Laboral</h3>
+          <span class="font-label-sm text-label-sm text-secondary font-mono font-semibold">Actualidad</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Profesional independiente – Río Negro</p>
+        <ul class="list-disc list-inside font-body-sm text-body-sm text-on-surface-variant space-y-1">
+          <li>Asesoramiento independiente en seguridad, higiene y control ambiental laboral.</li>
+          <li>Capacitación del personal operativo en prevención de riesgos laborales, seguridad, higiene y control ambiental.</li>
+          <li>Matriculado en el Colegio Profesional de Ingenieros y Técnicos (CPIT) de Viedma.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <div class="flex flex-wrap items-baseline justify-between gap-space-xs mb-space-xs">
+          <h3 class="font-title-md text-title-md text-primary font-bold">Docente de Seguridad e Higiene</h3>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-mono">2018 – 2025</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">CET N° 6, IPAP y Escuela de Aprendizaje y Oficios N° 1 – Viedma, Río Negro</p>
+        <ul class="list-disc list-inside font-body-sm text-body-sm text-on-surface-variant space-y-1">
+          <li>Docente de nivel medio en el Colegio de Educación Técnica Industrial CET N° 6.</li>
+          <li>Docente virtual en las tecnicaturas de Gestión de Recursos Humanos y de Seguridad e Higiene Laboral del Instituto Provincial de la Administración Pública (IPAP).</li>
+          <li>Docente de Higiene y Seguridad en la Escuela de Aprendizaje y Oficios N° 1.</li>
+          <li>Capacitaciones en seguridad e higiene para trabajadores de la administración pública, docentes y personal de comedores.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <div class="flex flex-wrap items-baseline justify-between gap-space-xs mb-space-xs">
+          <h3 class="font-title-md text-title-md text-primary font-bold">Inspector Técnico en Seguridad e Higiene</h3>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-mono">2014 – 2017</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Consejo Escolar Valle Inferior, Ministerio de Educación y DD.HH. – Viedma, Río Negro</p>
+        <ul class="list-disc list-inside font-body-sm text-body-sm text-on-surface-variant space-y-1">
+          <li>Inspección técnica de condiciones de seguridad e higiene en establecimientos educativos.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <div class="flex flex-wrap items-baseline justify-between gap-space-xs mb-space-xs">
+          <h3 class="font-title-md text-title-md text-primary font-bold">Responsable del Área de Licencias de Conducir</h3>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-mono">1999 – 2009</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Municipio de San Antonio Oeste – Río Negro</p>
+        <ul class="list-disc list-inside font-body-sm text-body-sm text-on-surface-variant space-y-1">
+          <li>Gestión del área de licencias de conducir conforme a la Ley Nacional de Tránsito 24.449.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-dot" aria-hidden="true"></span>
+        <div class="flex flex-wrap items-baseline justify-between gap-space-xs mb-space-xs">
+          <h3 class="font-title-md text-title-md text-primary font-bold">Técnico Electricista y Supervisor de Planta</h3>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-mono">1975 – 1988</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Cooperativa Obrera Metalúrgica San Antonio Ltda. – San Antonio Oeste, Río Negro</p>
+        <ul class="list-disc list-inside font-body-sm text-body-sm text-on-surface-variant space-y-1">
+          <li>Supervisión de planta en industria pesada dedicada a la reparación y puesta en marcha de vagones ferroviarios y bombas petroleras.</li>
+          <li>Mantenimiento e instalaciones eléctricas industriales.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMACIÓN -->
+<section class="w-full py-space-xl bg-surface" id="formacion">
+  <div class="max-w-[1200px] mx-auto px-gutter">
+    <div class="max-w-2xl mb-space-xl">
+      <div class="inline-flex items-center gap-space-xs mb-space-xs">
+        <span class="material-symbols-outlined text-secondary text-[18px]">school</span>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Educación</span>
+      </div>
+      <h2 class="font-headline-lg text-headline-lg text-primary font-bold">Formación Académica</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-xl">
+      <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm">
+        <div class="flex items-baseline justify-between gap-space-xs mb-space-xs">
+          <h3 class="font-title-md text-title-md text-primary font-bold">Licenciado en Seguridad, Higiene y Control Ambiental Laboral</h3>
+          <span class="font-label-sm text-label-sm text-secondary font-mono whitespace-nowrap">2020 – 2023</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Universidad del Este – La Plata, Buenos Aires</p>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Tesis final: investigación sobre el carbonato de sodio y sus implicancias para la salud, realizada en la planta de Álcalis de la Patagonia S.A. (ALPAT), Punta Delgado, San Antonio Oeste.</p>
+      </div>
+      <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm">
+        <div class="flex items-baseline justify-between gap-space-xs mb-space-xs">
+          <h3 class="font-title-md text-title-md text-primary font-bold">Licenciatura en Seguridad e Higiene (incompleta)</h3>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-mono whitespace-nowrap">2017 – 2019</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Universidad FASTA – Mar del Plata, Buenos Aires</p>
+      </div>
+      <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm">
+        <div class="flex items-baseline justify-between gap-space-xs mb-space-xs">
+          <h3 class="font-title-md text-title-md text-primary font-bold">Técnico Superior en Seguridad e Higiene Laboral</h3>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-mono whitespace-nowrap">2013 – 2016</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Instituto Provincial de la Administración Pública (IPAP) – Viedma, Río Negro</p>
+        <p class="font-body-sm text-body-sm text-on-surface-variant font-mono">Registro Nacional N° 00382761</p>
+      </div>
+      <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm">
+        <div class="flex items-baseline justify-between gap-space-xs mb-space-xs">
+          <h3 class="font-title-md text-title-md text-primary font-bold">Perito Mercantil</h3>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-mono whitespace-nowrap">1997</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">CENS N° 2 – San Antonio Oeste, Río Negro</p>
+      </div>
+    </div>
+
+    <div class="p-space-lg bg-primary-container/10 border border-primary-container/30 rounded">
+      <h3 class="font-title-md text-title-md text-primary font-bold mb-space-sm flex items-center gap-space-xs">
+        <span class="material-symbols-outlined text-secondary text-[20px]">auto_stories</span>
+        Formación de Posgrado en Curso
+      </h3>
+      <ul class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+        <li class="p-space-sm bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface-variant">
+          <span class="block font-semibold text-primary">Gestión de Auditorías y Gestión Ambiental</span>
+          Universidad Nacional de Cuyo (UNCuyo), 2026
+        </li>
+        <li class="p-space-sm bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface-variant">
+          <span class="block font-semibold text-primary">Gestión de Hidrocarburos</span>
+          Universidad Nacional de Cuyo (UNCuyo), 2026
+        </li>
+        <li class="p-space-sm bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface-variant">
+          <span class="block font-semibold text-primary">Seguridad en la Industria del Gas</span>
+          UTN Buenos Aires, Centro de e-Learning, 2026
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="w-full py-space-xl bg-surface-container-low" id="servicios">
+  <div class="max-w-[1200px] mx-auto px-gutter">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-space-xs mb-space-xs">
+          <span class="material-symbols-outlined text-secondary text-[18px]">build_circle</span>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Servicios Profesionales</span>
+        </div>
+        <h2 class="font-headline-lg text-headline-lg text-primary font-bold">
+          Acompañamiento Técnico en Seguridad e Higiene Laboral
+        </h2>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm md:mt-0 max-w-sm">
+        Servicios adaptados al tamaño de la dotación y al rubro de la actividad, con base en la experiencia profesional y docente del Lic. Becco.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+      <div class="bg-surface-container-lowest rounded p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col">
+        <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary mb-space-md">
+          <span class="material-symbols-outlined text-[26px]">assignment_turned_in</span>
+        </div>
+        <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Consultoría Independiente</span>
+        <h3 class="font-title-md text-title-md text-primary font-bold mt-1 mb-space-sm">Asesoramiento en Seguridad e Higiene</h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          Asesoramiento independiente en seguridad, higiene y control ambiental laboral para empresas y particulares.
+        </p>
+      </div>
+      <div class="bg-surface-container-lowest rounded p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col">
+        <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary mb-space-md">
+          <span class="material-symbols-outlined text-[26px]">school</span>
+        </div>
+        <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Cultura Preventiva</span>
+        <h3 class="font-title-md text-title-md text-primary font-bold mt-1 mb-space-sm">Capacitación de Personal</h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          Capacitación del personal operativo en prevención de riesgos laborales, seguridad, higiene y control ambiental.
+        </p>
+      </div>
+      <div class="bg-surface-container-lowest rounded p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col">
+        <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary mb-space-md">
+          <span class="material-symbols-outlined text-[26px]">fact_check</span>
+        </div>
+        <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Cumplimiento Normativo</span>
+        <h3 class="font-title-md text-title-md text-primary font-bold mt-1 mb-space-sm">Inspección Técnica</h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          Inspección técnica de condiciones de seguridad e higiene en establecimientos, con base en la experiencia como Inspector Técnico del Consejo Escolar Valle Inferior.
+        </p>
+      </div>
+      <div class="bg-surface-container-lowest rounded p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col">
+        <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary mb-space-md">
+          <span class="material-symbols-outlined text-[26px]">cast_for_education</span>
+        </div>
+        <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Formación Técnica</span>
+        <h3 class="font-title-md text-title-md text-primary font-bold mt-1 mb-space-sm">Docencia y Formación</h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          Docencia en seguridad e higiene para instituciones técnicas, tecnicaturas virtuales y escuelas de oficios.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CANALES DE CONTACTO -->
+<section class="w-full py-space-xl bg-surface" id="contacto">
+  <div class="max-w-[1200px] mx-auto px-gutter">
+    <div class="text-center max-w-2xl mx-auto mb-space-xl">
+      <div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container text-primary mb-space-sm font-label-sm text-label-sm font-semibold">
+        <span class="material-symbols-outlined text-[16px]">contact_phone</span>
+        CANALES DE ATENCIÓN DIRECTA
+      </div>
+      <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-space-xs">Comuníquese sin intermediarios</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        Atención directa para consultas, cotizaciones o asesoramiento en seguridad e higiene laboral.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+      <div class="p-space-lg bg-surface-container-lowest rounded shadow-md hover:shadow-lg transition-all flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-space-md">
+            <span class="w-10 h-10 rounded bg-secondary-container text-secondary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[24px]">chat</span>
+            </span>
+            <span class="font-label-sm text-label-sm bg-secondary/10 text-secondary px-space-xs py-0.5 rounded font-mono font-semibold">MÁS RÁPIDO</span>
+          </div>
+          <h3 class="font-title-md text-title-md text-primary font-bold mb-1">WhatsApp</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Canal directo con el Lic. Javier Becco para consultas y coordinación de visitas.</p>
+        </div>
+        <a class="w-full inline-flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-secondary text-on-secondary rounded font-body-sm text-body-sm font-semibold hover:bg-primary transition-colors" href="https://wa.me/5492920523324?text=Hola%20Lic.%20Javier%20Becco%2C%20quisiera%20hacerle%20una%20consulta%20t%C3%A9cnica%20sobre%20Seguridad%20e%20Higiene." rel="noopener noreferrer" target="_blank">
+          <span>Escribir por WhatsApp</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-space-md">
+            <span class="w-10 h-10 rounded bg-surface-container text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[24px]">call</span>
+            </span>
+            <span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-space-xs py-0.5 rounded font-mono">TELÉFONO</span>
+          </div>
+          <h3 class="font-title-md text-title-md text-primary font-bold mb-1">Llamada Telefónica</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Atención en horario laboral para consultas y asesoramiento.</p>
+        </div>
+        <a class="w-full inline-flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-surface-container text-primary rounded font-body-sm text-body-sm font-semibold hover:bg-surface-container-high transition-colors" href="tel:+542920523324">
+          <span>+54 2920 52-3324</span>
+        </a>
+      </div>
+
+      <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-space-md">
+            <span class="w-10 h-10 rounded bg-surface-container text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[24px]">mail</span>
+            </span>
+            <span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-space-xs py-0.5 rounded font-mono">COTIZACIONES</span>
+          </div>
+          <h3 class="font-title-md text-title-md text-primary font-bold mb-1">Correo Electrónico</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Recepción formal de consultas, pliegos y requerimientos técnicos.</p>
+          <div class="font-label-sm text-label-sm text-on-surface-variant font-mono mb-space-md truncate">profe.legislcet6@gmail.com</div>
+        </div>
+        <a class="w-full inline-flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-surface-container text-primary rounded font-body-sm text-body-sm font-semibold hover:bg-surface-container-high transition-colors" href="mailto:profe.legislcet6@gmail.com">
+          <span>Enviar Correo</span>
+        </a>
+      </div>
+
+      <div class="p-space-lg bg-surface-container-lowest rounded shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-space-md">
+            <span class="w-10 h-10 rounded bg-surface-container text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+            </span>
+            <span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-mono">MATRÍCULA</span>
+          </div>
+          <h3 class="font-title-md text-title-md text-primary font-bold mb-1">Colegiatura Profesional</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Matriculado en el Colegio Profesional de Ingenieros y Técnicos de Viedma.</p>
+          <div class="font-label-sm text-label-sm text-secondary font-mono mb-space-md">CPIT Viedma</div>
+        </div>
+        <span class="w-full inline-flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-surface-container text-on-surface-variant rounded font-body-sm text-body-sm font-semibold">
+          San Antonio Oeste, Río Negro
+        </span>
+      </div>
+    </div>
+
+    <div class="p-space-lg md:p-space-xl bg-primary text-on-primary rounded flex flex-col md:flex-row items-center justify-between gap-space-md shadow-xl">
+      <div class="flex items-center gap-space-md">
+        <div class="w-14 h-14 rounded bg-surface-container-lowest/10 flex items-center justify-center text-on-primary">
+          <span class="material-symbols-outlined text-[32px]">folder_special</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-title-md text-title-md text-on-primary font-bold">Curriculum Vitae Completo</span>
+          <span class="font-body-sm text-body-sm text-on-primary-container">Formato ATS, con formación, experiencia y certificaciones en curso.</span>
+        </div>
+      </div>
+      <a class="inline-flex items-center gap-space-xs px-space-xl py-space-sm bg-secondary text-on-secondary hover:bg-secondary-fixed hover:text-on-secondary-fixed rounded font-body-md text-body-md font-semibold transition-all duration-200 shadow-md whitespace-nowrap" href="assets/cv/CV_Javier_Becco.pdf" download="CV_Javier_Becco.pdf">
+        <span class="material-symbols-outlined text-[20px]">download</span>
+        <span>Descargar CV (PDF)</span>
+        <span class="font-label-sm text-label-sm opacity-80 font-mono">[136 KB]</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULARIO -->
+<section class="w-full py-space-xl bg-surface-container-low relative" id="contratacion">
+  <div class="max-w-[1000px] mx-auto px-gutter">
+    <div class="text-center max-w-2xl mx-auto mb-space-lg">
+      <h2 class="font-headline-lg text-headline-lg text-primary font-bold mb-space-xs">
+        ¿Necesita asesoramiento en Seguridad e Higiene?
+      </h2>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        Complete el formulario y la consulta llega directo al Lic. Javier Becco, o si prefiere una respuesta inmediata, escríbale por WhatsApp.
+      </p>
+    </div>
+
+    <div class="p-space-md bg-secondary-container text-on-secondary-container rounded flex flex-col sm:flex-row items-center justify-between gap-space-sm mb-space-lg shadow-sm">
+      <div class="flex items-center gap-space-sm">
+        <span class="material-symbols-outlined text-secondary text-[24px]">bolt</span>
+        <span class="font-body-sm text-body-sm font-medium">¿Es una consulta urgente?</span>
+      </div>
+      <a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-secondary text-on-secondary rounded font-label-sm text-label-sm font-semibold hover:bg-primary transition-colors whitespace-nowrap" href="https://wa.me/5492920523324?text=Estimado%20Lic.%20Javier%20Becco%2C%20tengo%20una%20consulta%20urgente%20y%20necesito%20asistencia." rel="noopener noreferrer" target="_blank">
+        <span class="material-symbols-outlined text-[16px]">chat</span>
+        <span>Escribir por WhatsApp</span>
+      </a>
+    </div>
+
+    <div class="bg-surface-container-lowest rounded p-space-lg md:p-space-xl shadow-lg">
+      <form class="flex flex-col gap-space-md" id="contact-form" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contacto"/>
+        <p class="hidden">
+          <label>No completar: <input name="bot-field"/></label>
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+          <div class="flex flex-col gap-space-xs">
+            <label for="field-nombre" class="font-label-sm text-label-sm text-primary font-semibold uppercase">Nombre y Apellido *</label>
+            <input id="field-nombre" name="nombre" class="w-full px-space-md py-space-sm bg-surface-container-lowest text-primary rounded outline-none border border-outline-variant/60 focus:border-secondary transition-all font-body-sm text-body-sm" placeholder="Ej. Martín Gómez" required type="text"/>
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <label for="field-empresa" class="font-label-sm text-label-sm text-primary font-semibold uppercase">Empresa / Particular *</label>
+            <input id="field-empresa" name="empresa" class="w-full px-space-md py-space-sm bg-surface-container-lowest text-primary rounded outline-none border border-outline-variant/60 focus:border-secondary transition-all font-body-sm text-body-sm" placeholder="Ej. Logística San Antonio S.A." required type="text"/>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+          <div class="flex flex-col gap-space-xs">
+            <label for="field-email" class="font-label-sm text-label-sm text-primary font-semibold uppercase">Correo Electrónico *</label>
+            <input id="field-email" name="email" class="w-full px-space-md py-space-sm bg-surface-container-lowest text-primary rounded outline-none border border-outline-variant/60 focus:border-secondary transition-all font-body-sm text-body-sm" placeholder="contacto@empresa.com.ar" required type="email"/>
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <label for="field-telefono" class="font-label-sm text-label-sm text-primary font-semibold uppercase">Teléfono / WhatsApp *</label>
+            <input id="field-telefono" name="telefono" class="w-full px-space-md py-space-sm bg-surface-container-lowest text-primary rounded outline-none border border-outline-variant/60 focus:border-secondary transition-all font-body-sm text-body-sm" placeholder="+54 2920 ..." required type="tel"/>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-space-xs">
+          <label for="field-servicio" class="font-label-sm text-label-sm text-primary font-semibold uppercase">Servicio Requerido *</label>
+          <select id="field-servicio" name="servicio" class="w-full px-space-md py-space-sm bg-surface-container-lowest text-primary rounded outline-none border border-outline-variant/60 focus:border-secondary transition-all font-body-sm text-body-sm cursor-pointer" required>
+            <option disabled selected value="">Seleccione el servicio o requerimiento...</option>
+            <option value="asesoramiento">Asesoramiento en Seguridad e Higiene</option>
+            <option value="capacitacion">Capacitación de Personal</option>
+            <option value="inspeccion">Inspección Técnica</option>
+            <option value="docencia">Docencia y Formación Técnica</option>
+            <option value="otro">Otro requerimiento</option>
+          </select>
+        </div>
+
+        <div class="flex flex-col gap-space-xs">
+          <label for="field-mensaje" class="font-label-sm text-label-sm text-primary font-semibold uppercase">Mensaje *</label>
+          <textarea id="field-mensaje" name="mensaje" class="w-full px-space-md py-space-sm bg-surface-container-lowest text-primary rounded outline-none border border-outline-variant/60 focus:border-secondary transition-all font-body-sm text-body-sm resize-none" placeholder="Describa brevemente la actividad de su empresa, dotación aproximada y ubicación..." required rows="4"></textarea>
+        </div>
+
+        <div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+          <span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+          <span>Sus datos se envían de forma privada y no se comparten con terceros.</span>
+        </div>
+
+        <button class="w-full py-space-sm px-space-lg bg-primary text-on-primary rounded font-body-md text-body-md font-bold hover:bg-secondary transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-space-xs mt-space-xs" type="submit">
+          <span class="material-symbols-outlined text-[20px]">send</span>
+          <span>Enviar Solicitud</span>
+        </button>
+
+        <div class="hidden mt-space-sm p-space-md bg-secondary-container text-on-secondary-container rounded flex items-center gap-space-sm" id="form-feedback" role="status">
+          <span class="material-symbols-outlined text-secondary text-[24px]">check_circle</span>
+          <div class="flex flex-col">
+            <span class="font-title-md text-title-md font-bold" data-feedback-title></span>
+            <span class="font-body-sm text-body-sm" data-feedback-body></span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING WHATSAPP -->
+<div class="fixed bottom-6 right-6 z-40 flex items-center">
+  <a class="group flex items-center gap-space-xs bg-secondary text-on-secondary px-space-md py-space-xs rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-200" href="https://wa.me/5492920523324?text=Hola%20Lic.%20Javier%20Becco%2C%20quisiera%20hacerle%20una%20consulta%20t%C3%A9cnica%20sobre%20Seguridad%20e%20Higiene." rel="noopener noreferrer" target="_blank" title="Chatear con el Lic. Javier Becco">
+    <span class="w-3 h-3 rounded-full bg-surface-bright animate-ping" aria-hidden="true"></span>
+    <span class="material-symbols-outlined text-[26px]">chat</span>
+    <span class="font-body-sm text-body-sm font-bold pr-1 hidden md:inline">¿Consultar por WhatsApp?</span>
+  </a>
+</div>
+
+</div>
+</main>
+
+<footer class="w-full bg-surface-container-low py-space-xl">
+  <div class="max-w-[1200px] mx-auto px-gutter">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-xl">
+      <div class="flex flex-col gap-space-xs">
+        <div class="flex items-center gap-space-xs">
+          <img src="assets/img/favicon.svg" alt="" class="h-6 w-6" width="24" height="24"/>
+          <span class="font-title-md text-title-md text-primary font-bold">Lic. Javier Becco</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          Consultoría técnica en Seguridad, Higiene y Control Ambiental Laboral. Matriculado en el CPIT de Viedma.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-space-xs">
+        <span class="font-title-md text-title-md text-primary font-semibold mb-space-xs">Navegación</span>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#inicio">Inicio</a>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#sobre-mi">Sobre mí</a>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#trayectoria">Trayectoria</a>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#servicios">Servicios</a>
+        <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#contacto">Contacto</a>
+      </div>
+
+      <div class="flex flex-col gap-space-xs">
+        <span class="font-title-md text-title-md text-primary font-semibold mb-space-xs">Contacto</span>
+        <div class="flex items-center gap-space-xs text-on-surface-variant">
+          <span class="material-symbols-outlined text-[16px]">mail</span>
+          <span class="font-body-sm text-body-sm">profe.legislcet6@gmail.com</span>
+        </div>
+        <div class="flex items-center gap-space-xs text-on-surface-variant">
+          <span class="material-symbols-outlined text-[16px]">call</span>
+          <span class="font-body-sm text-body-sm">+54 2920 52-3324</span>
+        </div>
+        <div class="flex items-center gap-space-xs text-on-surface-variant">
+          <span class="material-symbols-outlined text-[16px]">location_on</span>
+          <span class="font-body-sm text-body-sm">San Antonio Oeste, Río Negro, Argentina</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm bg-surface-container-lowest/60 rounded px-space-md py-space-sm">
+      <div class="font-label-sm text-label-sm text-on-surface-variant">© 2026 Lic. Javier Becco. Todos los derechos reservados.</div>
+      <div class="font-label-sm text-label-sm text-on-surface-variant">Matrícula CPIT Viedma Vigente</div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

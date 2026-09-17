@@ -1,0 +1,70 @@
+/* Base resets and behaviors not covered by Tailwind utility classes. */
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+main > :first-child { margin-top: 0 !important; }
+main > :last-child { margin-bottom: 0 !important; }
+
+::-webkit-scrollbar { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Timeline connector for the "Trayectoria" section. */
+.timeline {
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: linear-gradient(to bottom, #006a63, #c3c6ce);
+}
+.timeline-item {
+  position: relative;
+  padding-left: 3rem;
+}
+.timeline-dot {
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #006a63;
+  border: 3px solid #f8f9ff;
+  box-shadow: 0 0 0 2px #006a63;
+}
+.timeline-item.is-current .timeline-dot {
+  background: #001428;
+  box-shadow: 0 0 0 2px #001428;
+}
+
+/* Active nav link state, toggled by nav.js scrollspy. */
+.nav-link.is-active {
+  background-color: #dce9ff;
+  color: #0d1c2e;
+  font-weight: 600;
+}
+
+/* Form submission feedback states. */
+#form-feedback[data-state="error"] {
+  background-color: #ffdad6;
+  color: #93000a;
+}
