@@ -40,8 +40,17 @@ o con la extensión "Live Server" de VS Code.
 
 Usa [Netlify Forms](https://docs.netlify.com/manage/forms/setup/): no requiere backend.
 Netlify detecta el formulario `name="contacto"` en el HTML al momento del deploy.
-Las respuestas quedan disponibles en el panel de Netlify (**Site → Forms**), donde también
-se puede configurar una notificación por email a `profe.legislcet6@gmail.com`.
+Las respuestas quedan disponibles en el panel de Netlify (**Site → Forms**).
+
+**Importante:** Netlify no envía email automáticamente por defecto — hay que activar la
+notificación una vez desplegado el sitio (esto se hace en el panel, no en el código):
+
+1. En el dashboard de Netlify, entrar al sitio ya desplegado.
+2. Ir a **Project configuration → Forms → Form notifications**.
+3. **Add notification → Email notification**.
+4. En "Email to notify" cargar **profe.legislcet6@gmail.com**.
+5. Guardar. A partir de ahí, cada envío del formulario llega a esa casilla además de
+   quedar guardado en el panel de Netlify.
 
 ## Deploy en Netlify
 
